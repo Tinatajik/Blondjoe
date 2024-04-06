@@ -1,9 +1,10 @@
 import "./App.css";
+import Header from "./component/header/Header";
 
 function App() {
   return (
     <>
-      <h1 class="text-3xl font-bold underline bg-red-100">Hello world!</h1>
+      <Header />
     </>
   );
 }
