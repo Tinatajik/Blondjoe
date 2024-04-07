@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="flex overflow-x-auto whitespace-nowrap mt-4 text-white scrollbar-hide">
+      <div className="flex overflow-x-auto whitespace-nowrap mt-4 text-white scrollbar-hide ml-4">
         <div
           className={`flex-shrink-0 flex items-center justify-center w-20 h-8 rounded-2xl mr-4 px-12 cursor-pointer ${
             selectedBox === "🎒 Ransel" ? "bg-blue-500" : "bg-[#35363A]"
