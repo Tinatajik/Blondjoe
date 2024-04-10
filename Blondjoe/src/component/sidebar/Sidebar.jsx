@@ -60,7 +60,7 @@ const Section = ({ title, children }) => {
 export default function Sidebar() {
   return (
     <>
-      <div className="fixed h-full w-48 overflow-y-auto scrollbar-hide">
+      <div className="fixed h-full w-48 overflow-y-auto scrollbar-hide hidden md:block">
         <div className="border-r-2 border-gray-600 pr-4">
           <Section title="Category">
             <div className="flex items-center mb-2">

@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <>
       <div className="flex flex-col gap-5 md:flex-row justify-between items-center w-full mt-5">
-        <div className="flex justify-start items-center gap-5  ml-4">
+        <div className="flex w-full lg:justify-start items-center gap-5 lg:w-3/4 ml-4">
           <h3 className="text-white text-2xl font-bold">
             Blon<span className="text-blue-600 italic">djoe</span>
           </h3>
@@ -30,7 +30,7 @@ export default function Header() {
               />
             </div>
           </div>
-          <div className="bg-[#2A2E38] text-[#7898D4] rounded-full h-9 py-1 px-4 flex items-center">
+          <div className="bg-[#2A2E38] text-[#7898D4] rounded-full h-9 py-1 px-4 flex items-center md:w-48">
             <img
               width="20"
               height="20"
@@ -44,8 +44,8 @@ export default function Header() {
             <p className="ml-1">coin: 2,500,782.00</p>
           </div>
         </div>
-        <div className="flex items-center mr-4 gap-5 lg:hidden">
-          <div className="relative md:hidden">
+        <div className="flex items-center mr-4 gap-5 w-full px-4 lg:hidden">
+          <div className="relative w-full md:hidden">
             <input
               placeholder="Search"
               className="bg-[#35363A] rounded-full outline-none h-9 w-full px-10 py-2 pr-10 text-white"
@@ -69,14 +69,6 @@ export default function Header() {
               />
             </div>
           </div>
-          <img
-            width="25"
-            height="25"
-            src="https://img.icons8.com/ios-glyphs/30/apps.png"
-            alt="apps"
-            style={{ filter: "brightness(0) invert(0.40)" }}
-            className="cursor-pointer"
-          />
         </div>
 
         <div className="lg:flex items-center mr-4 gap-5 hidden">
