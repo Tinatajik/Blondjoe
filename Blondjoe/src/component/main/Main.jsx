@@ -151,7 +151,7 @@ export default function Main() {
               </div>
             </div>
           </div>
-          <div className="w-[8.5rem] bg-[#0C9A56] text-white p-4 mt-6 rounded-xl text-center hidden xl:block">
+          <div className="w-[9rem] bg-[#0C9A56] text-white p-4 mt-6 rounded-xl text-center hidden xl:block">
             <p>Awards for top shop</p>
             <img
               width="28"
@@ -162,7 +162,7 @@ export default function Main() {
               style={{ filter: "invert(100%)" }}
             />
           </div>
-          <div className="w-[8.5rem] bg-[#0C9A56] text-white p-4 mt-6 rounded-xl text-center hidden xl:block">
+          <div className="w-[9rem] bg-[#0C9A56] text-white p-4 mt-6 rounded-xl text-center hidden xl:block">
             <p>Best seller of the year</p>
             <img
               width="28"
@@ -174,7 +174,7 @@ export default function Main() {
             />
           </div>
         </div>
-        <div className="bg-[#35363A] text-white w-5/6 md:w-[34rem] md:px-5 justify-between mt-5 lg:w-[49.5%] lg:ml-[27rem] lg:mt-[-4.5rem] xl:w-[56.5%] xl:ml-[22rem] xl:mt-[-4.5rem] rounded-xl px-2 py-5 flex items-center gap-2">
+        <div className="bg-[#35363A] text-white w-5/6 md:w-[34rem] md:px-5 justify-between mt-5 lg:w-[49.5%] lg:ml-[27rem] lg:mt-[-4.5rem] xl:w-[56.5%] xl:ml-[23.5rem] xl:mt-[-4.5rem] rounded-xl px-2 py-5 flex items-center gap-2">
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABnklEQVR4nN1VPUtDQRCM32gjYiWW/gSxEsRObCwUBMVCQRBs/QHXJfFmLvC0SpEiKgivthexjlgoKgZBYyWiWES08cnCBeLzTN4lnQdb3d7MfszupVL/+iilerXWywBCkmWSL9buSO6RXFJKdbcEboxZIHlPMmpiZQDzPlF3kgwSAEc1A/AFYDsMw66mBCR3fcD5k2inITiAxVbBaU1K6wQPgqAPwEPsQQXAJsljD5KKiCNR9ACmbdnGfbIQ5bkIijHwjyiKOup6U/LoRegiuIgrI5PJDMldOp0eltQ9CG5dBK8Ox60Wm191yfPZQfCmtR6TUpE89Mjg3UVw+YfzuVJqQJQhAyilI/lpjFmxA1lNWqJCg6hOstnsoPWbADBbe5fL5UYk4qZNJjnXJO0rAFPxd1JCh/+qcwcBuElQ4xJJRXKG5LrdrPWBPBlj+n8R2PTPPNUSOTJdc4IbY0ZtA9sBL9YPZ5xgo03wQj6f73GC2yYfxWcAwGMC8Ipz9zgIrgGcSgO11pPyFYrJbwXgQARgScVEUfsy4c7N+a/ON9cjXPshDEZ0AAAAAElFTkSuQmCC" />
           <p className="hidden xl:block">+68 981 723 9012</p>
           <div className="bg-[#8C8C8C] h-8 w-0.5"></div>
