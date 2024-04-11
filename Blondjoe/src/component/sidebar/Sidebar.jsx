@@ -57,137 +57,67 @@ const Section = ({ title, children }) => {
   );
 };
 
+const CheckboxItem = ({ label }) => {
+  const [isChecked, setIsChecked] = useState(false);
+
+  const toggleCheckbox = () => {
+    setIsChecked(!isChecked);
+  };
+
+  return (
+    <div className="flex items-center mb-2">
+      <input
+        type="checkbox"
+        className="mr-2 appearance-none w-4 h-4 bg-[#35363A] rounded-sm border border-[#3F4045] checked:bg-[#84A8EC] checked:border-transparent"
+        checked={isChecked}
+        onChange={toggleCheckbox}
+      />
+      <div style={{ color: isChecked ? "white" : "" }}>{label}</div>
+    </div>
+  );
+};
+
 export default function Sidebar() {
   return (
     <>
       <div className="fixed top-[8.5rem] h-full w-48 overflow-y-auto scrollbar-hide hidden md:block">
         <div className="border-r-2 border-gray-600 pr-4">
           <Section title="Category">
-            <div className="flex items-center mb-2">
-              <input
-                type="checkbox"
-                className="mr-2 appearance-none w-4 h-4 bg-[#35363A] rounded-sm border border-[#3F4045] checked:bg-[#84A8EC] checked:border-transparent"
-              />
-              <div>Cleanser</div>
-            </div>
-            <div className="flex items-center mb-2">
-              <input
-                type="checkbox"
-                className="mr-2 appearance-none w-4 h-4 bg-[#35363A] rounded-sm border border-[#3F4045] checked:bg-[#84A8EC] checked:border-transparent"
-              />
-              <div>Toner</div>
-            </div>
-            <div className="flex items-center mb-2">
-              <input
-                type="checkbox"
-                className="mr-2 appearance-none w-4 h-4 bg-[#35363A] rounded-sm border border-[#3F4045] checked:bg-[#84A8EC] checked:border-transparent"
-              />
-              <div>Serum</div>
-            </div>
-            <div className="flex items-center mb-2">
-              <input
-                type="checkbox"
-                className="mr-2 appearance-none w-4 h-4 bg-[#35363A] rounded-sm border border-[#3F4045] checked:bg-[#84A8EC] checked:border-transparent"
-              />
-              <div>Moisturizer</div>
-            </div>
-            <div className="flex items-center mb-2">
-              <input
-                type="checkbox"
-                className="mr-2 appearance-none w-4 h-4 bg-[#35363A] rounded-sm border border-[#3F4045] checked:bg-[#84A8EC] checked:border-transparent"
-              />
-              <div>Face mask</div>
-            </div>
+            <CheckboxItem label="Cleanser" />
+            <CheckboxItem label="Toner" />
+            <CheckboxItem label="Serum" />
+            <CheckboxItem label="Moisturizer" />
+            <CheckboxItem label="Face mask" />
             <div className="flex items-center mb-2 text-sm text-[#84A8EC]">
               <div>Load more+</div>
             </div>
           </Section>
           <Section title="Price">
-            <div className="flex items-center mb-2">
-              <input
-                type="checkbox"
-                className="mr-2 appearance-none w-4 h-4 bg-[#35363A] rounded-sm border border-[#3F4045] checked:bg-[#84A8EC] checked:border-transparent"
-              />
-              <div>High to low</div>
-            </div>
-            <div className="flex items-center mb-2">
-              <input
-                type="checkbox"
-                className="mr-2 appearance-none w-4 h-4 bg-[#35363A] rounded-sm border border-[#3F4045] checked:bg-[#84A8EC] checked:border-transparent"
-              />
-              <div>Low to high</div>
-            </div>
+            <CheckboxItem label="High to low" />
+            <CheckboxItem label="Low to high" />
             <div className="flex items-center mb-2 text-sm text-[#84A8EC]">
               <div>Load more+</div>
             </div>
           </Section>
           <Section title="Location">
-            <div className="flex items-center mb-2">
-              <input
-                type="checkbox"
-                className="mr-2 appearance-none w-4 h-4 bg-[#35363A] rounded-sm border border-[#3F4045] checked:bg-[#84A8EC] checked:border-transparent"
-              />
-              <div>Nearest</div>
-            </div>
-            <div className="flex items-center mb-2">
-              <input
-                type="checkbox"
-                className="mr-2 appearance-none w-4 h-4 bg-[#35363A] rounded-sm border border-[#3F4045] checked:bg-[#84A8EC] checked:border-transparent"
-              />
-              <div>Farthest</div>
-            </div>
+            <CheckboxItem label="Nearest" />
+            <CheckboxItem label="Farthest" />
             <div className="flex items-center mb-2 text-sm text-[#84A8EC]">
               <div>Load more+</div>
             </div>
           </Section>
           <Section title="Rating">
-            <div className="flex items-center mb-2">
-              <input
-                type="checkbox"
-                className="mr-2 appearance-none w-4 h-4 bg-[#35363A] rounded-sm border border-[#3F4045] checked:bg-[#84A8EC] checked:border-transparent"
-              />
-              <div>Highest</div>
-            </div>
-            <div className="flex items-center mb-2">
-              <input
-                type="checkbox"
-                className="mr-2 appearance-none w-4 h-4 bg-[#35363A] rounded-sm border border-[#3F4045] checked:bg-[#84A8EC] checked:border-transparent"
-              />
-              <div>Lowest</div>
-            </div>
+            <CheckboxItem label="Highest" />
+            <CheckboxItem label="Lowest" />
             <div className="flex items-center mb-2 text-sm text-[#84A8EC]">
               <div>Load more+</div>
             </div>
           </Section>
           <Section title="Shipping">
-            <div className="flex items-center mb-2">
-              <input
-                type="checkbox"
-                className="mr-2 appearance-none w-4 h-4 bg-[#35363A] rounded-sm border border-[#3F4045] checked:bg-[#84A8EC] checked:border-transparent"
-              />
-              <div>Regular</div>
-            </div>
-            <div className="flex items-center mb-2">
-              <input
-                type="checkbox"
-                className="mr-2 appearance-none w-4 h-4 bg-[#35363A] rounded-sm border border-[#3F4045] checked:bg-[#84A8EC] checked:border-transparent"
-              />
-              <div>Next day</div>
-            </div>
-            <div className="flex items-center mb-2">
-              <input
-                type="checkbox"
-                className="mr-2 appearance-none w-4 h-4 bg-[#35363A] rounded-sm border border-[#3F4045] checked:bg-[#84A8EC] checked:border-transparent"
-              />
-              <div>Same day</div>
-            </div>
-            <div className="flex items-center mb-2">
-              <input
-                type="checkbox"
-                className="mr-2 appearance-none w-4 h-4 bg-[#35363A] rounded-sm border border-[#3F4045] checked:bg-[#84A8EC] checked:border-transparent"
-              />
-              <div>Instant</div>
-            </div>
+            <CheckboxItem label="Regular" />
+            <CheckboxItem label="Next day" />
+            <CheckboxItem label="Same day" />
+            <CheckboxItem label="Instant" />
             <div className="flex items-center mb-2 text-sm text-[#84A8EC]">
               <div>Load more+</div>
             </div>

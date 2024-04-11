@@ -151,7 +151,7 @@ export default function Main() {
               </div>
             </div>
           </div>
-          <div className="w-[9rem] bg-[#0C9A56] text-white p-4 mt-6 rounded-xl text-center hidden xl:block">
+          <div className="w-[8.5rem] bg-[#0C9A56] text-white p-4 mt-6 rounded-xl text-center hidden xl:block">
             <p>Awards for top shop</p>
             <img
               width="28"
@@ -162,7 +162,7 @@ export default function Main() {
               style={{ filter: "invert(100%)" }}
             />
           </div>
-          <div className="w-[9rem] bg-[#0C9A56] text-white p-4 mt-6 rounded-xl text-center hidden xl:block">
+          <div className="w-[8.5rem] bg-[#0C9A56] text-white p-4 mt-6 rounded-xl text-center hidden xl:block">
             <p>Best seller of the year</p>
             <img
               width="28"
